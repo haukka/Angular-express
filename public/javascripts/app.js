@@ -1,6 +1,6 @@
 'use strict'
 
-var module = angular.module('app', ['ngRoute', 'app.controllerstodo', 'app.controllersmotion', 'app.controllerschat', 'app.filter', 'app.unsafefilter']);
+var module = angular.module('app', ['ngRoute', 'app.controllerstodo', 'app.controllersmotion', 'app.filter', 'app.unsafefilter']);
 
 function RouteConfig($routeProvider, $locationProvider) {
     $routeProvider
@@ -10,9 +10,6 @@ function RouteConfig($routeProvider, $locationProvider) {
 	.when("/clipmotion", {
 	    templateUrl: "clip.ejs",
 	    controller: "MotionCtrl" })
-	.when("/chat_socket", {
-	    templateUrl: "chat.ejs",
-	    controller: "ChatCtrl" })
 	.otherwise({ redirectTo: "/todolist" });
 
     $locationProvider.html5Mode(true);

@@ -39,9 +39,6 @@ function MotionController($scope, $http, $sce){
 }
 
 
-function ChatController(){
-}
-
 function TodoController($scope) {
     $scope.list = [
 	{text: 'Test a framework'},

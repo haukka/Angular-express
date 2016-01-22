@@ -13,8 +13,4 @@ router.get('/clipmotion', function(req, res, next) {
   res.render('clip', { title: 'motion' });
 });
 
-router.get('/chat_socket', function(req, res, next) {
-  res.render('chat', { title: 'chat' });
-});
-
 module.exports = router;
