@@ -1,5 +1,6 @@
+'use strict'
 
-var module = angular.module('app', ['ngRoute', 'app.controllerstodo', 'app.controllersmotion', 'app.controllerschat']);
+var module = angular.module('app', ['ngRoute', 'app.controllerstodo', 'app.controllersmotion', 'app.controllerschat', 'app.filter', 'app.unsafefilter']);
 
 function RouteConfig($routeProvider, $locationProvider) {
     $routeProvider

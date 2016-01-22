@@ -46,8 +46,7 @@ function TodoController($scope) {
     $scope.list = [
 	{text: 'Test a framework'},
 	{text: 'Make some app'},
-	{text: 'try something'}
-	
+	{text: 'try something'}	
     ];
 
     $scope.getTotalList = function() {
