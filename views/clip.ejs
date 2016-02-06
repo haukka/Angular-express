@@ -5,9 +5,9 @@
 	<iframe id="player" style="display: block; width: 800px; height: 400px; margin: 0 auto; border: 0;" frameborder="0" ng-src="{{getVideo()}}"></iframe>
 </div>
 <div ng-cloak class="row" style="margin-top:10px">
-     <div class="col-md-3 col-sm-3" style="height:433px; margin-top:30px;" ng-repeat="clip in clips" ng-cloak>
+     <div class="col-md-3 col-sm-3" style="min-width: 200px;height:433px; margin-top:30px;" ng-repeat="clip in clips" ng-cloak>
  	<div class="thumbnail">
-		<img class="img-rounded" ng-src="http://www.dailymotion.com/thumbnail/video/{{clip.id}}" style="max-width:322px; max-height: 248px;">
+		<img class="img-rounded" ng-src="http://www.dailymotion.com/thumbnail/video/{{clip.id}}" style="max-width:100%; min-height: 240px; max-height: 248px;">
 	<div class="caption text-center">
 	     <h3> {{ clip.title | limitTo: 24 }} {{ clip.title.length > 24 ? "..." : ""}} </h3>
 	     <p style="height: 59px;" ng-bind-html="clip.description | limitTo: 70 | unsafe"> {{ clip.description.length}}</p>
