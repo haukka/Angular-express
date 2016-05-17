@@ -65,4 +65,3 @@ function TodoController($scope) {
 
 angular.module('app.controllerstodo', []).controller('TodoCtrl', TodoController);
 angular.module('app.controllersmotion', []).controller('MotionCtrl', MotionController);
-angular.module('app.controllerschat', []).controller('ChatCtrl', ChatController);
